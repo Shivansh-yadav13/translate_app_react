@@ -1,38 +1,64 @@
+body {
+  background: rgb(32, 32, 32);
+  color: whitesmoke;
+  overflow-y: hidden;
+  text-shadow: 2px 2px 100px rgba(245, 92, 118, 0.822);
+}
+
+.heading {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,.1);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 7rem;
+  background: linear-gradient(60deg, rgb(245, 92, 117), yellow, rgb(125, 31, 202), red, green);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select {
+  color: rgb(32, 32, 32);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-select {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.div-trans {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  font-size: 20 px;
+}
+
+button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: whitesmoke;
+  color: rgb(32, 32, 32);
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+button :hover {
+  background: blue;
 }
